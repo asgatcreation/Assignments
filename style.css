@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* overflow-x: hidden; */
+    background: #f2f2f2;
+}
+main {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex_container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flexbox {
+    background: #e18524;
+    width: 350px;
+    padding: 50px;
+}
+.img {
+    padding-bottom: 30px;
+}
+p {
+    color: #fff;
+    font-size: 15px;
+}
+h1 {
+    padding-bottom: 30px;
+    color: #fff;
+}
+.suv {
+    background: #016972;
+}
+.luxury {
+    background: #00403f;
+}
+.flex_btn {
+    margin-top: 50px;
+    width: 60%;
+    padding: 10px 5px;
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+    color: #e18524;
+    font-weight: 700;
+}
+.suv_btn {
+    color: #016972;
+    font-weight: 700;
+}
+.luxury_btn {
+    color: #00403f;
+    font-weight: 700;
+}
+.grid_link {
+    margin: 10px 0 50px 0;
+    text-align: center;
+}
+.grid_link p {
+    color: red;
+    font-size: 18px;
+}
+.grid_link p a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ######grid###### */
+body {
+    height: 100vh;
+    background: #fff;
+    display: grid;
+    place-items: center;
+}
+.grid_container {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 10px;
+}
+.flex_link p {
+    font-size: 20px;
+    word-spacing: 2px;
+}
+.flex_link p a {
+    text-decoration: none;
+    color: #00fffb;
+    font-size: 25px;
+    font-weight: 700;
+}
+.gridbox {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'box1 box1 box1 box1 box2 box2'
+    'box1 box1 box1 box1 box2 box2'
+    'box3 box3 box3 box4 box4 box4'
+    'box3 box3 box3 box5 box5 box5'
+    ;
+}
+.red {
+    background: red;
+    grid-area: box1;
+}
+.yellow {
+    background: yellow;
+    grid-area: box2;
+}
+.green {
+    background: green;
+    grid-area: box3;
+}
+.blue_one {
+    background: blue;
+    grid-area: box4;
+}
+
+.blue_two {
+    background: blue;
+    grid-area: box5;
+}
+@media screen and (max-width:400px) {
+    .flex_container {
+        background: red;
+        width: 100%;
+        padding: 0;
+    }
+    .flexbox {
+        width: 100%; 
+    }
+}

@@ -5,71 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style2.css">
-  <title>Register Here</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 
 <body>
   <main>
-    <div class="container">
-      <div class="sign_up">
-        <div class="left_col">
-          <h2>Welcome</h2>
-          <p>you already have an account with us, <br> please sign-in
-          </p>
-          <div class="btn-sign-in"><a href="signin.html">Sign-In</a></div>
+    <div class="grid_link">
+      <p>click <a href="grid.html">here</a> to view the grid layout</p>
+    </div>
+    <div class="flex_container">
+      <div class="flexbox">
+        <div class="img">
+          <img src="./img/Copy of icon-sedans.svg" alt="">
         </div>
-        <div class="right_col">
-          <h3>Create an Account</h3>
-          <form action="/signin.html">
-            <div class="user-details">
-              <div class="input-box">
-                <span class="details">First Name</span>
-                <input type="text" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Last Name</span>
-                <input type="text" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Email</span>
-                <input type="email" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Phone Number</span>
-                <input type="number" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Password</span>
-                <input type="password" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Confirm Password</span>
-                <input type="password" required>
-              </div>
+        <h1>SEDANS</h1>
+        <p>Choose a sedan for its <br> affordability and excellent <br> fuel economy. Ideal for <br> cruising in the
+          city or on <br> your next road trip.</p>
+        <div class="flex_btn">
+          Learn More
+        </div>
+      </div>
 
-              <div class="input-box">
-                <span class="details">Date of Birth</span>
-                <input type="date" name="dob" id="dob" required>
-              </div>
+      <div class="flexbox suv">
+        <div class="img"><img src="./img/Copy of icon-suvs.svg" alt=""></div>
+        <h1>SUVS</h1>
+        <p>Take an SUV for its spacious <br> interior, power, and <br> versatility. Perfect for your <br> next family
+          vacation and <br> off-road adventures.</p>
+        <div class="flex_btn suv_btn">
+          Learn More
+        </div>
+      </div>
 
-              <div class="input-box color">
-                <span class="details">Select Your Favorite Color</span>
-                <input type="color" id="favcolor" name="favcolor" value="#fff" required>
-              </div>
-              <div>
-                <label><strong>Gender</strong></label>
-                <select name="gender" id="gender" required>
-                  <option value="--kindly select your gender" selected>--Kindly select your gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Others">Others</option>
-                  <option value="cnts">Choose not to say</option>
-                </select>
-              </div>
-            </div>
-            <button type="submit" class="sign_up-btn">Sign-up </button>
-          </form>
+      <div class="flexbox luxury">
+        <div class="img"><img src="./img/Copy of icon-luxury.svg" alt=""></div>
+        <h1>LUXURY</h1>
+        <p>Cruise in the best car brands <br> without the bloated prices. <br> Enjoy the enhanced comfort <br> of a
+          luxury rental and arrive <br> in style. </p>
+        <div class="flex_btn luxury_btn">
+          Learn More
         </div>
       </div>
     </div>
