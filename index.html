@@ -1,223 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Asgat Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Register Here</title>
 </head>
+
 <body>
+  <main>
     <div class="container">
-    <div class="hero">
-        <div class="header">
-            <div class="logo">
-                <a href="/index.html">
-                <img src="./img/logo.png" alt="" width="100px" ></a>
+      <div class="sign_up">
+        <div class="left_col">
+          <h2>Welcome</h2>
+          <p>you already have an account with us, <br> please sign-in
+          </p>
+          <div class="btn-sign-in"><a href="signin.html">Sign-In</a></div>
+        </div>
+        <div class="right_col">
+          <h3>Create an Account</h3>
+          <form action="/signin.html">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input type="text" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="password" required>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Date of Birth</span>
+                <input type="date" name="dob" id="dob" required>
+              </div>
+
+              <div class="input-box color">
+                <span class="details">Select Your Favorite Color</span>
+                <input type="color" id="favcolor" name="favcolor" value="#fff" required>
+              </div>
+              <div>
+                <label><strong>Gender</strong></label>
+                <select name="gender" id="gender" required>
+                  <option value="--kindly select your gender" selected>--Kindly select your gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Others">Others</option>
+                  <option value="cnts">Choose not to say</option>
+                </select>
+              </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="project.html" target="_blank">Project</a></li>
-                    <li><a href="contact.html" target="_blank">Contact Me</a></li>
-                </ul>
-            </nav>
-            <div class="icon_nav">
-                <div class="nav_icon">
-                    <a href="index.html"><img src="./img/home.png" alt=""></a>
-                    <a href="#about"><img src="./img/aboutme.png" alt=""></a>
-                    <a href="#service"><img src="./img/service.png" alt=""></a>
-                    <a href="project.html" target="_blank"><img src="./img/project.png" alt=""></a>
-                    <a href="contact.html" target="_blank"><img src="./img/contact.png" alt=""></a>
-                </div>
-            </div>
+            <button type="submit" class="sign_up-btn">Sign-up </button>
+          </form>
         </div>
-        <div class="hero_content">
-            <div class="col_right">
-                <div class="hero_img">
-                    <img src="./img/homepics.png" alt="" width="300px">
-                </div>
-            </div>
-            <div class="col_left">
-                <h2>AKANJI <br> OLUWASEUN</h2>
-                <div class="rect"></div>
-                <p>Hello, I'm Akanji Oluwaseun. <br> A <span>fullstack web developer</span> and <br> <span>Mathematical Programmer</span> <br> with alot of experience in this field.</p>
-            </div>
-        </div>
+      </div>
     </div>
-    <section id="about">
-        <div class="about_content">
-        <div class="img_col">
-            <img src="./img/aboutimg.png" alt="">
-        </div>
-        <div class="about_info">
-            <h2>About <span>Me</span></h2>
-            <div class="abt_rect"></div>
-            <p>My name is Akanji Oluwaseun. I'm a freelance fullstack developer and mathematical programmer and I'm very passionate and dedicated to my work. <br> Over 6 years I have been acquiring the skills necessary to make your work and project excellect and well delivered.</p>
-            <div class="abt_btn">
-                <div class="hireme">Hire Me</div>
-                <div class="cv">Download CV</div>
-            </div>
-        </div>
-    </div>
-    <div class="about_skills">
-        <h3>My Skills</h3>
-        <div class="skill_box">
-            <div class="skills">
-                <div class="circle_percent">
-                    <div class="skills_content">
-                        <span>90%</span> <br><span>HTML</span>
-                    </div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="circle_percent">
-                <div class="skills_content">
-                    <span>60%</span><br> <span>CSS</span>
-                </div>
-        </div>
-    </div>
-
-    <div class="skills">
-        <div class="circle_percent">
-            <div class="skills_content">
-                <span>75%</span> <br><span>Javascript</span>
-            </div>
-    </div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>100%</span> <br><span>LaTeX</span>
-        </div>
-</div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>80%</span> <br> <span>React</span>
-        </div>
-</div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>90%</span> <br> <span>Python</span>
-        </div>
-</div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>90%</span> <br> <span>Joomla</span>
-        </div>
-</div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>95%</span> <br><span>WordPress</span>
-        </div>
-</div>
-</div>
-
-<div class="skills">
-    <div class="circle_percent">
-        <div class="skills_content">
-            <span>90%</span> <br> <span>Matlab</span>
-        </div>
-</div>
-</div>
-    </div>
-    <div class="framework">
-        <div class="framework_box">
-            <img src="./img/images (2).png" alt="">
-            <img src="./img/images (3).png" alt="">
-            <img src="./img/images.png" alt="">
-            <img src="./img/WordPress-logotype-standard.png" alt="">
-            <img src="./img/download.png" alt="">
-            <img src="img/django-community-logo-png-transparent.png" alt="">
-        </div>
-    </div>
-    </section>
-
-    <section id="service">
-        <div class="service_heading">
-            <h3>My Services</h3>
-            <h2>What I am Expert At</h2>
-            <p>the following services are my area of specialization and I can guarantee you 100% assurance on any of them and the delivery is nothing but excellent.</p>
-        </div>
-        <div class="service_content">
-            <div class="service_box">
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>Web Development</h2>
-                    <p>I develop websites with perfect design and make it user friendly. We do both landing page and
-                        interactive page</p>
-                </div>
-
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>App Development</h2>
-                    <p>I develop mobile applications for Android, IOS and Windows.</p>
-                </div>
-
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>LaTeX and Beamer</h2>
-                    <p>I typeset Science and related document in LaTeX and I make beautiful presenttion with Beamer.</p>
-                </div>
-
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>Virtual Assistant</h2>
-                    <p>I can be your perfect Virtual Assistant and get your work done timely and swift.</p>
-                </div>
-
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>Data Science and Machine Learning</h2>
-                    <p>I do Data Science and Machine Learning project.</p>
-                </div>
-
-                <div class="service">
-                    <img src="./img/icon/codingbracket.png" alt="">
-                    <h2>MatLab and Maple</h2>
-                    <p>I can help you do simulation with Matlab and create well formatted codes and projects</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="contact_sect">
-        <div class="project_col">
-            <h4>Checkout the latest projects <br> that i just complete</h4>
-            <a href="project.html"><button type="submit">Project</button></a>
-        </div>
-        <div class="contact_col">
-            <h4>Do you have any projects? <br> Let's try me!</h4>
-            <a href="contact.html"><button type="submit">Contact Me</button></a>
-        </div>
-    </div>
-    <div class="link home_social">
-        <a href="https://www.github.com/asgatcreation" target="_blank"><img src="./img/icon/github.png" alt=""></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="./img/icon/instagram.png" alt=""></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="./img/icon/linkedin.png" alt=""></a>
-        <a href="https://www.overleaf.com" target="_blank"><img src="./img/icon/overleaf.png" alt=""></a>
-        <a href="https://www.twitter.com/iam_asgat" target="_blank"><img src="./img/icon/twitter.png" alt=""></a>
-        <a href="https://whatsapp.com" target="_blank"><img src="./img/icon/whatsapp.png" alt=""></a>
-    </div>
-    <footer>
-        <p>Design by <img src="./img/logo.png" alt="" width="60px"> &copy 2022</p>
-        <p>All Right Reserve</p>
-    </footer>
-</div>
+  </main>
 </body>
+
 </html>

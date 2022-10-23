@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+  max-width: 900px;
+  width: 100%;
+  height: 550px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.863);
+  overflow: hidden;
+}
+.sign_up,
+.sign_in {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+/* .sign_in {
+  display: none;
+} */
+.left_col {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sign_up>.left_col {
+  background: red;
+}
+.sign_up>.right_col {
+  background: #fff;
+}
+.left_col h1 {
+  color: #000;
+  font-size: 40px;
+}
+.left_col p {
+  color: #0009;
+  font-size: 15px;
+}
+form {
+  padding: 0 30px;
+}
+.input_box{
+  margin-top: 10px;
+  text-align: left;
+}
+.btn_sign_in {
+  margin-top: 30px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  background: red;
+  color: #fff;
+}
+.alternative {
+  margin-top: 10px;
+}
+.img_icon {
+  margin-top: 10px;
+}
+.input_box input {
+  width: 100%;
+  background: rgba(148, 142, 142, 0.5);
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+}
+.sign_in>.right_col {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  text-align: center;
+  color: #fff;
+}
+.right_col h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.right_col p {
+  margin-bottom: 30px;
+}
+.sign_up_btn {
+  background: #fff;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  color: red;
+}
+.sign_up_btn a {
+  text-decoration: none;
+  color: red;
+}
+.sign_up>.right_col {
+  padding: 20px 40px;
+  color: #000;
+}
+.sign_up>.right_col>form {
+  margin-top: 30px;
+  padding: 0;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.input-box>input {
+  width: 90%;
+  padding: 5px;
+  border: 2px solid #71b7e6;
+  border-radius: 10px;
+}
+.input-box>span {
+  font-size: 13px;
+  font-weight: 600;
+}
+input[type=date] {
+  width: 110%;
+}
+input[type=color] {
+  width: 95%;
+  height: 35px;
+}
+.color {
+  margin-left: 35px;
+}
+select {
+  margin-top: 10px;
+  width: 43%;
+  padding: 6px;
+  border-radius: 10px;
+  border: 2px solid #71b7e6;
+  /* margin: auto; */
+  outline: none;
+}
+.sign_up-btn {
+  padding: 10px;
+  width: 30%;
+  background: red;
+margin-top: 30px;
+text-align: center;
+border-radius: 30px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 700;
+border: none;
+}
+.sign_up-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.sign_up>.left_col {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_col>p {
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.808);
+} 
+.btn-sign-in {
+  margin-top: 30px;
+  border: 2px solid #fff9;
+  text-transform: uppercase;
+  width: 30%;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-sign-in a {
+  text-decoration: none;
+  color: #fff;
+}
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success_box {
+  width: 300px;
+  height: 200px;
+  background: #fff9;
+  margin: auto;
+  padding: 20px;
+}
+.success_box>p {
+  font-size: 13px;
+}
+.success_box>button {
+  margin-top: 30px;
+  width: 35%;
+  background: red;
+  padding: 5px;
+  border-radius: 30px;
+  border: none;
+}
+.success_box>button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+@media screen and (max-width: 750px){
+  .container{
+    overflow: scroll;
+  }
+  .sign_up{
+    grid-template-columns: 1fr;
+  }
+/*   .sign_up>.left_col{ */
+/*     display: none;
+  }
+  .sign_up>.right_col{
+    width: 100%;
+  } */
+/*   .sign_up{
+    grid-template-columns: 1fr;
+  } */
+}
